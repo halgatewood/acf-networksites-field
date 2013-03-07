@@ -17,15 +17,10 @@ if( !class_exists( 'ACF_NetworkSites_Field' ) && class_exists( 'acf_Field' ) )
 	{
 		function __construct($parent)
 		{
-			// do not delete!
 	    	parent::__construct($parent);
-	    	
-	    	// set name / title
 	    	$this->name = 'network_sites'; // variable name (no spaces / special characters / etc)
 			$this->title = __("Network Sites",'acf'); // field label (Displayed in edit screens)
-			
-	   	}
-	
+	   	}	
 	
 		function create_options($key, $field) { }
 	
@@ -37,10 +32,8 @@ if( !class_exists( 'ACF_NetworkSites_Field' ) && class_exists( 'acf_Field' ) )
 	
 			$field['choices'] = $sites;
 		
-			// html
 			echo '<select id="' . $field['id'] . '" class="' . $field['class'] . '" name="' . $field['name'] . '">';	
 			
-			// loop through values and add them as options
 			foreach($field['choices'] as $key => $value)
 			{
 					$selected = '';
