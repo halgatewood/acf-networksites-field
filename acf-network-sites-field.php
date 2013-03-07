@@ -18,8 +18,8 @@ if( !class_exists( 'ACF_NetworkSites_Field' ) && class_exists( 'acf_Field' ) )
 		function __construct($parent)
 		{
 	    	parent::__construct($parent);
-	    	$this->name = 'network_sites'; // variable name (no spaces / special characters / etc)
-			$this->title = __("Network Sites",'acf'); // field label (Displayed in edit screens)
+	    	$this->name = 'network_sites';
+			$this->title = __("Network Sites",'acf');
 	   	}	
 	
 		function create_options($key, $field) { }
