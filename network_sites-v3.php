@@ -1,15 +1,4 @@
 <?php
-/*
-Plugin Name: Advanced Custom Fields - Network Sites Add-on
-Plugin URI: http://www.advancedcustomfields.com/
-Description: Creates a select box of your WordPress Multisite blogs.
-Version: 1.0
-Author: Hal Gatewood
-Author URI: http://www.halgatewood.com/
-License: GPL
-Copyright: Elliot Condon, Hal Gatewood
-*/
-
 	
 if( !class_exists( 'ACF_NetworkSites_Field' ) && class_exists( 'acf_Field' ) ) 
 {
